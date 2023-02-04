@@ -3,48 +3,37 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 START_MESSAGE = '''**Hello, {}
-I Am ShortnerFly.com, Bulk Link Converter. I Can Convert Links Directly From Your ShortnerFly Account,
-    
-1. Go To 👉 https://ShortnerFly.com/member/tools/api  
-2. Than Copy API Key
-3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)**
-
-**/api(space)API Key 
-(See Example.👇)
-Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
-
-**➕ Hit** 👉 /Features To Know More Features Of This Bot.
-**💁‍♀️ Hit** 👉 /help To Get Help.
-**➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
-**➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
-
-If You Want Any **Other Shortner** Link Converter Bot Instead Of Shortnerfly than **contact** at 👉 @Cyniteofficial (all **shortners** support available.)
+I Am Pro URL Shortener,
+I Can Convert Links Directly From Your Given Account,
+Contact Admin Using @ProExecBot To Add Your Own Website And API To This Bot.
 '''
 
 HELP_MESSAGE = '''**Hello, {}
-I Am ShortnerFly, Bulk Link Converter Bot. I Can Convert Links Directly From Your ShortnerFly Account,**
+I Am Pro URL Shortener,
+Bulk Link Converter Bot. I Can Convert Links Directly From Your Given Account,**
     
 1. Go To 👉 https://ShortnerFly.com/member/tools/api  
 2. Than **Copy API** Key
 3. Than Type **/api** than give a **single space** and than **paste** your **API** Key (**see example** to understand more...)
 
-**/api(space)API Key 
+**/api(space)API Key**
 (See Example.👇)
-Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac `
+**Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac`
 
-**➕ Hit** 👉 /Features To Know More Features Of This Bot.
-**💁‍♀️ Hit** 👉 /help To Get Help.
-**➕ Hit** 👉 /channel Command To Get Help About Adding your channel to bot.
-**➕ Hit** 👉 /footer To Get Help About Adding your Custom Footer to bot.
+**👉** /Features To Know More Features Of This Bot.
+**👉** /help To Get Help.
+**👉** /channel Command To Get Help About Adding your channel to bot.
+**👉** /footer To Get Help About Adding your Custom Footer to bot.
 
-If You Want Any **Other Shortner** Link Converter Bot Instead Of ""Shortnerfly** than **contact** at 👉 @Cyniteofficial (all **shortners support** available.)**
+If You Want Any Other Shortner Link Converter Bot Instead Of **Ziplinks** than **contact**
+👉 @ProExecBot (all shortners support available.)**
 '''
 
-ABOUT_TEXT = '''**Hey! My name is @ShortnerFlyBot. I am Shortener Fly Link Converter Bot.**
+ABOUT_TEXT = '''**Hey! My name is RituRajPS.**
 
 **⚡Features⚡**
 
-• I can **Convert any** links or posts to your **Shortnerfly** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
+• I can **Convert any** links or posts to your **ZipLinks** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
 
 • I Can **auto** add custom **footer text** to your every post. Hit 👉 /footer To know more...
 
@@ -56,7 +45,8 @@ ABOUT_TEXT = '''**Hey! My name is @ShortnerFlyBot. I am Shortener Fly Link Conve
 
 • **No** need to share **password or email** to convert links.**
 
- Anyone who want to use any **other shortner** instead of ShortnerFly than **contact** at 👉 @Cyniteofficial (all **shortners support** available.)
+ Anyone who want to use any **other shortner** instead of ShortnerFly than **contact** at 
+ 👉 @ProExecBot (all **shortners support** available.)
 
 **Click On Custom Alias To Create Custom Link**
 '''
@@ -65,7 +55,7 @@ CUSTOM_ALIAS_MESSAGE = """For Custom Alias, `[link] | [custom_alias]`, Send in t
 
 This feature works only in private mode only
 
-Ex: https://t.me/shortnerfly | Shortnerfly"""
+Ex: https://t.me/streamerview | StreamerView"""
 
 
 ADMINS_MESSAGE = """
@@ -96,7 +86,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 
 START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Get Api', url=f'https://ShortnerFly.com/member/tools/api')
+        InlineKeyboardButton('Get Api', url=f'https://ziplinks.in/member/tools/api')
     ]
 ])
 
@@ -110,7 +100,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 USER_ABOUT_MESSAGE = """
-- Website: [{base_site}](https://shortnerfly/ref/rngharman)
+- Website: [{base_site}](https://ziplinks.in/ref/rngharman)
 
 - Site Link {base_site} Current Linked API: {shortener_api}
 
@@ -131,7 +121,7 @@ SHORTENER_API_MESSAGE = """To add or update your Shortner Website API,
             
 Ex: `/api de303d5270f481aec928f39883da7b7f9a8812ac `
 
-Get API From [{base_site}](https://shortnerfly/ref/rngharman)
+Get API From [{base_site}](https://ziplinks.in/ref/rngharman)
 
 Current {base_site} API: `{shortener_api}`"""
 
