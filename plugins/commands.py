@@ -16,7 +16,7 @@ from bot import *
 
 logger = logging.getLogger(__name__)
 
-user_commands = ["api", "header", "footer", "username", "banner_image", "me", "help", "base_site"]
+user_commands = ["api", "header", "footer", "username", "banner_image", "me", "base_site"]
 avl_web = ["gplinks.in"]
 
 avl_web1 = "".join(f"- {i}\n" for i in avl_web)

@@ -8,7 +8,7 @@ I Can Convert Links Directly From Your Given Account.
 
 Contact Admin Using @ProExecBot, If you are facing problem in anythings
 
-👉 /features or /help For More
+👉 /features For More
 '''
 
 HELP_MESSAGE = '''Hello {}
@@ -39,7 +39,6 @@ Bulk Link Converter Bot. I Can Convert Links Directly From Your Given Account**
 
 
 **👉** /Features To Know More Features Of This Bot.
-**👉** /help To Get Help.
 **👉** /channel Command To Get Help About Adding your channel to bot.
 **👉** /footer To Get Help About Adding your Custom Footer to bot.
 
