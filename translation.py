@@ -2,56 +2,89 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 
-START_MESSAGE = '''**Hello, {}
+START_MESSAGE = '''**Hello {}
 I Am Pro URL Shortener,
-I Can Convert Links Directly From Your Given Account,
-Contact Admin Using @ProExecBot To Add Your Own Website And API To This Bot.
+I Can Convert Links Directly From Your Given Account.
+
+Contact Admin Using @ProExecBot, If you are facing problem in anythings
+
+👉 /features or /help For More
 '''
 
-HELP_MESSAGE = '''**Hello, {}
+HELP_MESSAGE = '''Hello {}
 I Am Pro URL Shortener,
-Bulk Link Converter Bot. I Can Convert Links Directly From Your Given Account,**
-    
-1. Go To 👉 https://ShortnerFly.com/member/tools/api  
-2. Than **Copy API** Key
-3. Than Type **/api** than give a **single space** and than **paste** your **API** Key (**see example** to understand more...)
+Bulk Link Converter Bot. I Can Convert Links Directly From Your Given Account**
 
-**/api(space)API Key**
+1. Go to your Url Shortener Website
+2. Copy the url of the website
+3. Than Type **/base_site** than give a single space and than paste the website link.
+
+(**see example to understand...**)
+
+`/base_site website`
 (See Example.👇)
-**Example:** `/api de303d5270f481aec928f39883da7b7f9a8812ac`
+**Example:** `/base_site ziplinks.in`
+
+-----------
+-----------
+
+1. Now Copy Your API from your Shortener website
+2. Than Type **/api** than give a single space and than paste your API.
+
+(**see example to understand...**)
+
+`/api 9f82a99c8f0acb42d81ac153ae9583e862833e28`
+(See Example.👇)
+**Example:** `/api 9f82a99c8f0acb42d81ac153ae9583e862833e28`
+
 
 **👉** /Features To Know More Features Of This Bot.
 **👉** /help To Get Help.
 **👉** /channel Command To Get Help About Adding your channel to bot.
 **👉** /footer To Get Help About Adding your Custom Footer to bot.
 
-If You Want Any Other Shortner Link Converter Bot Instead Of **Ziplinks** than **contact**
-👉 @ProExecBot (all shortners support available.)**
+Contact Admin Using @ProExecBot, If you are facing problem in anythings
 '''
 
-ABOUT_TEXT = '''**Hey! My name is RituRajPS.**
+ABOUT_TEXT = '''Hello {},
 
 **⚡Features⚡**
 
-• I can **Convert any** links or posts to your **ZipLinks** link / post. (Button Links Posts, Hidden links/Hyperlinks All Are Supported)
+• I can Convert any links or posts to your Provided Shortener Website link. 
+(Button Links Posts, Hidden links/Hyperlinks All Are Supported)
 
-• I Can **auto** add custom **footer text** to your every post. Hit 👉 /footer To know more...
+• Add your custom url shortener website.
+👉 /base_site To know more...
 
-• I Can **auto** add custom **Header text** to your every post. Hit 👉 /Header To know more...
+• Update or Add your **API** from Your Custom Website.
+👉 /api [api] To know more...
 
-• I Can **replace / remove** other's **channel links** with **your channel** link. Hit 👉 /channel To know More...
+• Auto add custom **footer text** to your every post.
+👉 /footer To know more...
 
-• I Can **Automatically Replace** Your ***Banner** Image To images in the post. Hit  👉/Banner To Know More... 
+• Auto add custom **Header text** to your every post.
+👉 /Header To know more...
+
+• Replace / remove other's channel links with your channel link.
+👉 /channel To know More...
+
+• Automatically Replace Your Banner Image To images in the post.
+👉/Banner To Know More... 
+
+• More Commands
+👉/help
+👉/about
+👉/info
 
 • **No** need to share **password or email** to convert links.**
 
- Anyone who want to use any **other shortner** instead of ShortnerFly than **contact** at 
- 👉 @ProExecBot (all **shortners support** available.)
+ Anyone who want to use any **other shortner** type /base_site and set your own shortener website for any help **contact** me through @ProExecBot (all **shortners support** available.)
 
 **Click On Custom Alias To Create Custom Link**
 '''
 
-CUSTOM_ALIAS_MESSAGE = """For Custom Alias, `[link] | [custom_alias]`, Send in this format
+CUSTOM_ALIAS_MESSAGE = """For Custom Alias, Send in this format
+`[link] | [custom_alias]`
 
 This feature works only in private mode only
 
@@ -86,7 +119,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 
 START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
     [
-        InlineKeyboardButton('Get Api', url=f'https://ziplinks.in/member/tools/api')
+        InlineKeyboardButton('Contact Admin', url=f'https://telegram.me/proexecbot')
     ]
 ])
 
@@ -99,58 +132,54 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup([
 
 ])
 
-USER_ABOUT_MESSAGE = """
-- Website: [{base_site}](https://ziplinks.in/ref/rngharman)
+USER_ABOUT_MESSAGE = """Here are the current settings for this bot
 
-- Site Link {base_site} Current Linked API: {shortener_api}
+- Website: {base_site}
 
-- Replace Channel Username: @{username}
+- Base Site {base_site}
 
-- Header Text: 
-{header_text}
+- API: `{shortener_api}`
 
-- Footer Text: 
-{footer_text}
+- Username: @{username}
+
+- Header Text: {header_text}
+
+- Footer Text: {footer_text}
 
 - Banner Image: {banner_image}
 """
 
 
 SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-`/set_api [api]`
-            
-Ex: `/api de303d5270f481aec928f39883da7b7f9a8812ac `
-
-Get API From [{base_site}](https://ziplinks.in/ref/rngharman)
-
-Current {base_site} API: `{shortener_api}`"""
+`/api [api]`
+Ex: `/api 9f82a99c8f0acb42d81ac153ae9583e862833e28`
+Get API From {base_site}
+Current Website : {base_site}
+API: `{shortener_api}`"""
 
 HEADER_MESSAGE = """Reply to the Header Text You Want
-
 This Text will be added to the top of every message caption or text
-
 For adding line break use \n
 To Remove Header Text: `/header remove`"""
 
 FOOTER_MESSAGE = """**Reply to the Footer Text You Want**
-
 This Text will be added to the **bottom** of every message **caption** or text
-
 For adding **line break** use \n
 To Remove Footer Text: `/footer remove`"""
 
-USERNAME_TEXT = """**Hello Harman, I am shortnerfly.com, Bulk Link Converter Bot From Linked shortnerfly.com Account,**
-
-**🌟 Type** /channel (channel link or username)
+USERNAME_TEXT = """**Hello {}, 
+I Am Pro URL Shortener
+Bulk Link Converter Bot. I Can Convert Links Directly From Your Given Account**
+**🌟** /channel (channel link or username)
 
 **example:**
-/channel @shortnerfly
+/channel @ProDownload_In
 Or
-/channel https://t.me/shortnerfly
+/channel https://t.me/ProDownload_In
 
-**🤘 Hit** 👉 /features To Know More Features Of This Bot.
+**👉** /features To Know More Features Of This Bot.
 
-**- Message @cyniteofficial For More Help -**"""
+**- Message @proexecbot For More Help -**"""
 
 BANNER_IMAGE = """
 Usage: `/banner_image image_url` or reply to any Image with this command
