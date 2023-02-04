@@ -16,7 +16,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "URLShortener")
 DATABASE_URL = os.getenv("DATABASE_URL", "mongodb+srv://riturajps:riturajps@cluster0.vqauwt1.mongodb.net/?retryWrites=true&w=majority") 
 OWNER_ID =  int(os.environ.get("OWNER_ID", "1161352331")) 
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
-ADMINS.append(Id Owned Id)
+ADMINS.append(1161352331)
 #  Optionnal variables
 LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "Logs Channels Id")) 
 UPDATE_CHANNEL = os.environ.get("UPDATE_CHANNEL", "Streamerview") # For Force Subscription
