@@ -150,10 +150,13 @@ USER_ABOUT_MESSAGE = """Here are the current settings for this bot
 """
 
 
-SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
-`/api [api]`
-Ex: `/api 9f82a99c8f0acb42d81ac153ae9583e862833e28`
+SHORTENER_API_MESSAGE = """To add or update your Shortner Website API.
 Get API From {base_site}
+
+**`/api [api]`**
+
+**Ex:-** `/api 9f82a99c8f0acb42d81ac153ae9583e862833e28`
+
 Current Website : {base_site}
 API: `{shortener_api}`"""
 
