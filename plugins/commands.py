@@ -16,7 +16,7 @@ from bot import *
 
 logger = logging.getLogger(__name__)
 
-user_commands = ["set_api", "header", "footer", "username", "banner_image", "me"]
+user_commands = ["set_api", "header", "footer", "username", "banner_image", "me", "base_site"]
 avl_web = ["mdiskpro.in", "mdiskpro.xyz",]
 
 avl_web1 = "".join(f"- {i}\n" for i in avl_web)
@@ -152,6 +152,27 @@ async def banner_image_handler(bot, m: Message):
             else:
                 return await m.reply_text("Image URL is Invalid")
 
+            
+            
+            
+@Client.on_message(filters.command("base_site") & filters.private)
+@private_use
+async def base_site_handler(bot, m: Message):
+    user_id = m.from_user.id
+    user = await get_user(user_id)
+    cmd = m.command
+    site = user["base_site"]
+    text = f"`/base_site (base_site)`\n\nCurrent base site: {site}\n\n EX: `/base_site shareus.in`\n\nAvailable base sites:\n{avl_web1}\nAnd All alternate sites to droplink.co"
+    if len(cmd) == 1:
+        return await m.reply(text=text, disable_web_page_preview=True)
+    elif len(cmd) == 2:
+        base_site = cmd[1].strip()
+        if not domain(base_site):
+            return await m.reply(text=text, disable_web_page_preview=True)
+        await update_user_info(user_id, {"base_site": base_site})
+        await m.reply("Base Site updated successfully")            
+            
+            
 
 @Client.on_message(filters.command('info') & filters.private)
 async def me_handler(bot, m:Message):
