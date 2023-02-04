@@ -71,13 +71,12 @@ ABOUT_TEXT = '''Hello {},
 👉/Banner To Know More... 
 
 • More Commands
-👉/help
-👉/about
 👉/info
 
-• **No** need to share **password or email** to convert links.**
+• **No** need to share **password or email** to convert links.
 
- Anyone who want to use any **other shortner** type /base_site and set your own shortener website for any help **contact** me through @ProExecBot (all **shortners support** available.)
+Anyone who want to use any **other shortner** type /base_site and set your own shortener website for any help **contact** me through @ProExecBot 
+(all **shortners support** available.)
 
 **Click On Custom Alias To Create Custom Link**
 '''
