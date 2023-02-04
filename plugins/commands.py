@@ -156,7 +156,6 @@ async def banner_image_handler(bot, m: Message):
             
             
 @Client.on_message(filters.command("base_site") & filters.private)
-@private_use
 async def base_site_handler(bot, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
